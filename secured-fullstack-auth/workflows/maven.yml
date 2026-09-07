@@ -10,6 +10,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        # Run commands from the project directory where pom.xml is located
+        working-directory: secured-fullstack-auth
 
     steps:
       - name: Checkout
